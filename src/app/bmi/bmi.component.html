@@ -1,0 +1,14 @@
+<div class="container mt-5 w-25">
+    <form>
+        <h2 class="text-center">{{Title}}</h2>
+        <div class="form-control">
+            <label for="Height">Magasság (cm)</label>
+            <input type="number" class="form-control" [(ngModel)]="Height" name="Height" id="Height" min="1">
+            <label for="Weight">Súly (kg)</label>
+            <input type="number" class="form-control" [(ngModel)]="Weight" name="Weight" id="Weight" min="1">
+            <div class="text-center">
+                <button class="btn btn-success m-2" (click)="showBmiAlert()">Számol</button>
+            </div>
+        </div>
+    </form>
+</div>
