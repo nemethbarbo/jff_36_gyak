@@ -31,7 +31,7 @@ export class ProductGrossPriceComponent {
   }
 
   public getGrossPrice(): number {
-    return this.netPrice+(this.netPrice*(this.vat/100)+1);
+    return this.netPrice*(this.vat/100)+1);
   }
 
   public showAlertGrossPrice(){
